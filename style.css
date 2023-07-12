@@ -50,8 +50,8 @@ button {
 
 h1,
 h2 {
-  font-size: 2.8rem;
-  line-height: 3.6rem;
+  font-size: clamp(2.8rem, 1rem + 2vw, 4rem);
+  line-height: clamp(3.6rem, 1rem + 2vw, 5rem);
 }
 
 h2 {
@@ -61,8 +61,8 @@ h2 {
 p,
 li,
 strong {
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: clamp(1.4rem, 1vw + 0.4rem, 2rem);
+  line-height: clamp(1.8rem, 1vw + 1rem, 2.5rem);
 }
 
 ul,
@@ -90,7 +90,7 @@ ul {
     max-width: 52.5rem;
   }
 
-  h1,
+  /* h1,
   h2 {
     font-size: 4rem;
     line-height: 5rem;
@@ -101,7 +101,7 @@ ul {
   strong {
     font-size: 2rem;
     line-height: 2.4rem;
-  }
+  } */
 
   button {
     padding: 1rem 2rem;
